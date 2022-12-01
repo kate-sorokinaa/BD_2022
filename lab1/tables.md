@@ -62,3 +62,9 @@
 | customer_id | int | auto increment; not null; unique | внешний ключ на клиента |
 | employee_id | int | auto increment; not null; unique | внешний ключ на сотрудника |
 | date | datetime | not null | дата покупки |
+| status_id | int | not null | статус заказа |
+## Статус (Status)
+|имя поля | тип | ограничения | описание |
+|:---:|:---:|:---:|:---:|
+| status_id | pk | auto increment; not null; unique | первичный ключ |
+| status | VARCHAR(30) | not null | статус заказа |
